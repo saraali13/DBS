@@ -1,1 +1,10 @@
-
+select first_name, lpad(first_name,15,'*') as char15_firstname from employees;
+select ltrim(' Oracle') from dual;
+select INITCAP(first_name)as first_name,INITCAP(last_name)as last_name from employees;
+select next_day('20-AUG-2022','monday') from dual;
+select to_char(to_date('25-DEC-2023','DD-MON-YYYY'),'MM-YYYY') from dual;
+select distinct salary from employees order by (salary) ASC;
+select salary, round(salary,-2) as rounded_salary from employees;
+select department_id,count(*) as emp_count from employees group by department_id having count(*)=(select max(count(*)) from employees group by department_id);
+select department_id,total_salary from(select department_id, sum(salary) as total_salary from employees group by department_id order by sum(salary) DESC) where rownum <=3;
+select department_id,count(*) as emp_count from employees group by department_id having count(*)=(select max(count(*)) from employees group by department_id);
