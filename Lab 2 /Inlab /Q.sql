@@ -1,1 +1,11 @@
-
+select sum(salary) as Total_Salary from employees;
+select avg(salary) as Average_Salary from employees;
+select count(*)as total_employees, MANAGER_ID from EMPLOYEES group by MANAGER_ID;
+select * from employees where salary =( select min(salary) from employees);
+select to_char(sysdate,'DD-MM-YYYY') as current_date from dual;
+select to_char(sysdate,'DAY MONTH YYYY') as current_date from dual;
+select * from employees where to_char(hire_date,'Day')='Wednesday';
+select MONTHS_BETWEEN('01-JAN-2025','01-OCT-2024') as MONTHS_BETWEEN from dual;
+--select months_between(to_char(sysdate,'DD-MM-YYYY'),to_char(hire_date,'DD-MM-YYYY')) as Working_Months from employees;
+select employee_id,first_name,round( months_between(sysdate,hire_date)) as Working_Months from employees;
+select last_name, substr(last_name,1,5) as lastname_5_char from employees;
