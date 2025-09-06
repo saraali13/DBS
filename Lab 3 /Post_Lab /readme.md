@@ -15,3 +15,22 @@
 <img width="896" height="91" alt="image" src="https://github.com/user-attachments/assets/07ceeabb-8cea-47f7-9997-dcb210aaf62f" />
 
 ## Q14
+<img width="647" height="53" alt="image" src="https://github.com/user-attachments/assets/af2c9fa4-3b7b-4528-ab1e-248ae710f609" />
+
+## Q15
+<img width="609" height="51" alt="image" src="https://github.com/user-attachments/assets/47e3e4e8-dec4-4fb9-b4a1-796d03793873" />
+
+## Q16
+<img width="224" height="111" alt="image" src="https://github.com/user-attachments/assets/acfe9ac6-f092-49c2-8bfd-d8b7a672d276" />
+
+## Q17
+<img width="115" height="72" alt="image" src="https://github.com/user-attachments/assets/618a5fbd-c21b-456b-b091-7e5738b707dd" />
+
+## Q18
+<img width="173" height="54" alt="image" src="https://github.com/user-attachments/assets/6a4acda5-4e05-491f-ada3-ebde3d250fb1" />
+
+## Q19
+<img width="356" height="83" alt="image" src="https://github.com/user-attachments/assets/4b519bb7-5d40-4556-9124-672a6185a562" />
+
+## 20
+<img width="323" height="128" alt="image" src="https://github.com/user-attachments/assets/d00271de-f613-4ebb-9962-e74be6df2834" />
