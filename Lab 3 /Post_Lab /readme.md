@@ -12,3 +12,6 @@
 <img width="849" height="176" alt="image" src="https://github.com/user-attachments/assets/dd184de5-e562-43a8-afb3-3444103546e2" />
 
 ## Q13
+<img width="896" height="91" alt="image" src="https://github.com/user-attachments/assets/07ceeabb-8cea-47f7-9997-dcb210aaf62f" />
+
+## Q14
