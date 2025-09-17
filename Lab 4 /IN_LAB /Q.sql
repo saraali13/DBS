@@ -95,3 +95,14 @@ INSERT INTO FacultyCourse (Faculty_ID, Course_ID) VALUES (6, 8);  -- SIR SHOAIB 
 INSERT INTO FacultyCourse (Faculty_ID, Course_ID) VALUES (7, 10);  -- Dr. KAMRAN teaches CAL
 INSERT INTO FacultyCourse (Faculty_ID, Course_ID) VALUES (8, 11);  -- MISS NAZIA teaches TBW
 
+-- IN LAB
+SELECT d.Dep_Name, count(*) AS TOTAL_STUDENTS FROM DEPARTMENT d , Student s WHERE d.dep_id = s.dep_id group by d.DEP_NAME;
+SELECT dep_name FROM department d WHERE (SELECT AVG(s.gpa) FROM student s WHERE s.dep_id = d.dep_id) >= 3.0;
+SELECT co.Course_Name,AVG(s.Fee_Paid) AS avg_paidfees FROM Course co , enrollment e, student s WHERE co.course_id = e.course_id AND e.STD_ID = s.STD_ID group by co.COURSE_NAME;
+SELECT d.dep_name,count(f.faculty_id) as faculty_members from faculty f , department d WHERE f.dep_id = d.dep_id group by d.dep_name;
+SELECT faculty_name FROM faculty WHERE salary > (SELECT AVG(salary) FROM faculty);
+SELECT STD_NAME,GPA FROM student WHERE GPA > ANY(SELECT GPA FROM student s , department d WHERE d.dep_id = s.dep_id AND d.dep_name = 'CS');
+SELECT * FROM (SELECT * FROM student ORDER BY GPA DESC) where ROWNUM <= 3;
+SELECT s.STD_ID, s.STD_NAME FROM Student s WHERE s.STD_NAME != 'Ali' AND NOT EXISTS ((SELECT e1.Course_ID FROM Enrollment e1 , Student s1 where e1.STD_ID = s1.STD_ID AND s1.STD_NAME = 'Ali') MINUS (SELECT e2.Course_ID FROM Enrollment e2 WHERE e2.STD_ID = s.STD_ID));
+SELECT d.dep_name, SUM(s.fee_paid) AS total_fees FROM department d , student s WHERE d.Dep_ID = s.Dep_ID group by d.dep_name;
+SELECT co.course_name FROM course co , student s WHERE co.dep_id = s.dep_id AND s.gpa>3.5;
