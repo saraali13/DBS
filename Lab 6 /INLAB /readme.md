@@ -7,3 +7,5 @@
 ## Many to many relationship
 <img width="622" height="421" alt="many to many 1" src="https://github.com/user-attachments/assets/80a04209-6b73-42ad-9f86-9f173ec20447" />
 <img width="632" height="486" alt="many to many" src="https://github.com/user-attachments/assets/27d807be-2ee7-453c-b709-82c061654e06" />
+
+### The DDL files for both are present in .sql files above
