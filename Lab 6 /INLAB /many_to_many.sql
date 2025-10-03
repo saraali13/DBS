@@ -4,7 +4,6 @@
 --   type:      Oracle Database 11g
 
 
-
 CREATE TABLE course (
     course_id     INTEGER NOT NULL,
     course_name   VARCHAR2(10) NOT NULL
