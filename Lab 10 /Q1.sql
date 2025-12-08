@@ -1,4 +1,3 @@
-
 CREATE TABLE bank_accounts (
     account_no   NUMBER PRIMARY KEY,
     holder_name  VARCHAR2(50),
